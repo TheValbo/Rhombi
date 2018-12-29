@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="public/css/letsRoll.css" />
+  <title>Rhombi - Let's Roll</title>
+</head>
+
+<body>
+  <div>
+    <div class="header">
+      <img src="public/img/logo_innen_weiss.png" alt="logo">
+      <div class="headerText">
+        <h2> Music </h2>
+        <h3> connected to Rhombi </h3>
+      </div>
+    </div>
+
+    <div class="main">
+      <img class="colorwheel" src="public/img/colorwheel.png" alt="colorwheel" onclick="window.location.href='/standardMode.html'">
+      <img id="playPauseImage" class="play" src="public/ico/play-button.png" alt="play-button" onclick="playPause()">
+      <h1> Let it roll </h1>
+      <div class="dots">
+        <span class="dot" id="dot1" onclick="changeSoundPackage(this)">1</span>
+        <span class="dot" id="dot2" onclick="changeSoundPackage(this)">2</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function changeSoundPackage(el) {
+      var id = el.id;
+      if (id == "dot1") {
+        document.getElementById("dot1").style.border = "3px solid white";
+        document.getElementById("dot2").style.border = "0px solid white";
+      } else {
+        document.getElementById("dot2").style.border = "3px solid white";
+        document.getElementById("dot1").style.border = "0px solid white";
+      }
+    }
+
+    var src = "play";
+
+    function playPause() {
+      if (src == "play") {
+        document.getElementById("playPauseImage").src = "public/ico/pause-round-button.png";
+        document.getElementById("playPauseImage").alt = "Pause";
+        src = "pause";
+      } else {
+        document.getElementById("playPauseImage").src = "public/ico/play-button.png";
+        document.getElementById("playPauseImage").alt = "Play";
+        src = "play";
+      }
+    }
+  </script>
+</body>
+
+</html>

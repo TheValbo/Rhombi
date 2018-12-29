@@ -1,0 +1,84 @@
+:root {
+  --grey: #232323;
+  --white: #FFFFFF;
+  --lightBlue: #01B0F1;
+  --purple: #AD5FFF;
+  --lightGray: #D1D1D1;
+  --darkBlue: #5B49AF;
+  --blue: #4A5DBC;
+  --lightBlue2: #2287D7;
+  --lightBlue3: #0BA2E7;
+  --turquoise: #1AFBF3;
+  --blue: #39C2FF;
+  --yellow: #FFEB3C;
+  --orange: #F6A80D;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: var(--grey);
+}
+
+html {
+    display: table;
+    overflow: hidden;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+  top: -100px;
+}
+
+.container img {
+  width: 80%;
+  max-width: 400px;
+  left: 50%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered h1 {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.welcomebox h3 {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.welcomebox {
+  width: 100%;
+  background: transparent;
+  color: var(--white);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

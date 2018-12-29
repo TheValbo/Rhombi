@@ -1,0 +1,175 @@
+:root {
+  --grey: #232323;
+  --white: #FFFFFF;
+  --lightBlue: #01B0F1;
+  --purple: #AD5FFF;
+  --lightGray: #D1D1D1;
+  --darkBlue: #5B49AF;
+  --blue: #4A5DBC;
+  --lightBlue2: #2287D7;
+  --lightBlue3: #0BA2E7;
+  --turquoise: #1AFBF3;
+  --blue: #39C2FF;
+  --yellow: #FFEB3C;
+  --orange: #F6A80D;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: var(--grey);
+  margin: 0px;
+}
+
+.header {
+  height: 10%;
+  background-color: var(--purple);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.headerText {
+  max-height: 80%;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.header img {
+  max-height: 80%;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 80%;
+  margin: auto;
+}
+
+.header h2 {
+  color: var(--white);
+  font-family: 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: auto;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.header h3 {
+  color: var(--white);
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  width: auto;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.main {
+  display: grid;
+}
+
+.play {
+  height: 50px;
+  float: right;
+  margin-top: 20%;
+  margin-left: 85%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: normal;
+}
+
+.dot {
+  height: 45px;
+  width: 45px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.dotsTop {
+  position: relative;
+  top: 165%;
+  text-align: center;
+}
+
+
+.centerDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.dotsBottom {
+  position: relative;
+  top: 165%;
+  text-align: center;
+}
+
+.color-picker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-90%);
+}
+
+.color-picker input {
+  display: none;
+}
+
+.canvas-wrapper {
+  border-radius: 1000px;
+  overflow: hidden;
+}
+
+.indicator {
+  top: calc(50% - 2rem);
+  left: 50%;
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  transform: translate3d(-50%, -2rem, 0);
+  pointer-events: none;
+}
+
+.indicator .selected-color {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 30%;
+  border-radius: 1000px;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
+}
